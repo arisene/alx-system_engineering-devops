@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times and Hi
+counter=0
+while ((counter <= 9))
+do 
+    if [ $counter -eq 9 ]
+    then
+        echo 'Hi'
+    fi
+    echo 'Best School'
+    ((counter++))
+done
