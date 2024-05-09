@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Extract active IPv4 IPs
+active_ips=$(ip addr | grep 'inet ' | awk '{print $2}' | cut -d'/' -f1)
+
+# Display active IPv4 IPs
+echo "$active_ips"
